@@ -1,38 +1,110 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #f2eae4;
+}
+
 .App {
-  text-align: center;
+	font-family: 'Montserrat', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #315937;
+	padding: 0 10px 0 10px;
+	color: #f2eae4;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.links {
+	margin-right: 20px;
+	display: flex;
+	align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.links a {
+	color: #f2eae4;
+	margin-left: 10px;
+	text-decoration: none;
+	transition: 0.35s ease all;
 }
 
-.App-link {
-  color: #61dafb;
+.links a:hover {
+	transform: scale(1.2);
+	color: red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.products {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.ProductCard {
+	width: 500px;
+	display: flex;
+	border: 1px solid #0d0d0d;
+	border-radius: 25px;
+	padding: 2em;
+	margin: 2em;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.ProductCard > img {
+	max-width: 200px;
+}
+
+.ProductInfo > h2 {
+	font-size: 1em;
+}
+
+.ProductInfo {
+	/* width: 500px; */
+	/* border: 1px solid red; */
+	text-align: right;
+}
+
+.AddCartButton {
+	font-family: 'Montserrat', sans-serif;
+	border-radius: 25px;
+	border: 1px solid black;
+	background: none;
+	transition: 0.3s ease all;
+}
+
+.AddCartButton:hover {
+	transform: scale(1.2);
+	background-color: #315937;
+	color: #f2eae4;
+}
+
+.cartItem {
+	display: flex;
+	justify-content: space-between;
+	text-align: right;
+	padding: 20px;
+}
+.cartItem h2 {
+	font-size: 1.1em;
+}
+
+.cartItem img {
+	max-width: 150px;
+}
+
+.counter button {
+	margin: 5px;
+}
+
+.total {
+	padding: 20px;
+}
+
+.shoppingCart h1 {
+	margin-left: 20px;
 }
