@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ecommerce-react/static/css/main.ecf25a03.css",
+    "main.js": "/ecommerce-react/static/js/main.cda0720d.js",
+    "static/media/Inrainbowscover.png": "/ecommerce-react/static/media/Inrainbowscover.95b916e7c17c9529a7dd.png",
+    "static/media/folsomprisoncover.png": "/ecommerce-react/static/media/folsomprisoncover.65a24722f5136f262b8c.png",
+    "static/media/reachincover.png": "/ecommerce-react/static/media/reachincover.23904c7de0b370a7f26e.png",
+    "index.html": "/ecommerce-react/index.html",
+    "main.ecf25a03.css.map": "/ecommerce-react/static/css/main.ecf25a03.css.map",
+    "main.cda0720d.js.map": "/ecommerce-react/static/js/main.cda0720d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ecf25a03.css",
+    "static/js/main.cda0720d.js"
+  ]
+}
