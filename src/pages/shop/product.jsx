@@ -2,6 +2,11 @@ import React, { useContext } from 'react';
 import '../../App.css';
 import { ShopContext } from '../../context/shop-context';
 
+/* 
+this is the jsx structure of each "product card" / item in the shop -- 
+it is then rendered in shop.jsx file by mapping over the json array in "products.js" and importing data through props
+*/
+
 export const Product = (props) => {
 	const { id, name, pricing, image } = props.data;
 	const { addToCart } = useContext(ShopContext);
