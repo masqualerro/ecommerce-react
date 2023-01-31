@@ -2,6 +2,8 @@ import React, { createContext } from 'react';
 import { useState } from 'react';
 import { productList } from '../products';
 
+// context api allows data to be shared "globally" -- I am using this for the universal "cart array" and subsequent functions like "addToCart" and "getTotalCartAmount" to be present in product and shop components
+
 export const ShopContext = createContext(null);
 
 const getCart = () => {
