@@ -40,10 +40,16 @@ export const ShopContextProvider = (props) => {
 	const minusCart = (itemId) => {
 		setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
 	};
+	
+	/* 
+	//export all functions within "ShopContextProvider" for universal use by 
+	giving ShopContext.Provider a value of the variable containing these functions
+	*/
 
 	const shopValue = { cartItems, addToCart, minusCart, getTotalCartAmount };
 
 	console.log(cartItems);
-
+	
+	//this then wraps all routes in App.js
 	return <ShopContext.Provider value={shopValue}>{props.children}</ShopContext.Provider>;
 };
