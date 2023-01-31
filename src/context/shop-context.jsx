@@ -11,6 +11,7 @@ to be present in product and shop components
 
 export const ShopContext = createContext(null);
 
+//function to create "cart" array with objects for each object in my "productList" array containing info for each project
 const getCart = () => {
 	let cart = {};
 	for (let i = 1; i < productList.length + 1; i++) {
